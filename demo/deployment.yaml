@@ -15,6 +15,9 @@ spec:
       - name: argocd-app
         image: utibeabasi6/argocd-code:v1.0.8
         resources:
+          requests:
+            memory: "64Mi"
+            cpu: "500m"
           limits:
             memory: "128Mi"
             cpu: "500m"
